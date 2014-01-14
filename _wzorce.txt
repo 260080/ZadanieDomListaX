@@ -1,0 +1,17 @@
+Wzorzec Strategia
+
+U¿ytkownik ma do wyboru dwie metody wyszukiwaj¹ce.
+a) wyszukiwanie podstawowe
+b) wyszukiwanie zaawansowane
+Zale¿nie od wyboru opcji u¿ytkownik wprowadza ró¿ne dane
+a) miejsce, termin
+b) miejce, termin, typ noclegu, itp.
+W tym wzorcu korzystamy z obiektu interfejsu Isearch (if else), który wywo³ujê odpowiedni¹ metodê
+a) search(values: List<string>):id_offer[]
+b) Advanced_Search(adv_values: List<string>): id_offer[] 
+odpowiednie dane zostaj¹ wyœwietlone w modelu widoku ViewSearch
+
+Wzorzec Proxy
+Interfejs Iview jest realizowany przez (ViewSearch, ViewReservation, ViewAuthentication, ViewOffer, ViewAdm_oferta) oprócz tego jest Proxy czyli GenericView
+Role klienta pe³ni klasa kontrolera Routing, odpowiednikiem tych klas jest RenderHTML
+
